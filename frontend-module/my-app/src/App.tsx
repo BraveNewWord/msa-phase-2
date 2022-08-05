@@ -1,5 +1,8 @@
 import axios from "axios";
 import React, { useState } from 'react';
+import IconButton from "@mui/material/IconButton";
+import SearchIcon from "@mui/icons-material/Search";
+import TextField from "@mui/material/TextField";
 import './App.css';
 
 function App() {
@@ -14,11 +17,26 @@ function App() {
       </h1>
 
       <div>
-        <label>Word</label><br/>
-        <input type="text" id="word" name="word" onChange={e => setSearchWord(e.target.value)}/><br/>
-        <button onClick={search}>
-        Search
-        </button>
+      <TextField
+          id="search-bar"
+          className="text"
+          value={searchWord}
+          onChange={(prop: any) => {
+            setSearchWord(prop.target.value);
+          }}
+          label="Enter a Word..."
+          variant="outlined"
+          placeholder="Search..."
+          size="small"
+        />
+        <IconButton
+          aria-label="search"
+          onClick={() => {
+            search();
+          }}
+        >
+          <SearchIcon style={{ fill: "blue" }} />
+        </IconButton>
       </div>
       
       <p>
