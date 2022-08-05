@@ -7,7 +7,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { CardActionArea, Grid } from '@mui/material';
 import './App.css';
 
 function App() {
@@ -16,7 +16,12 @@ function App() {
   const WORD_BASE_URL = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 
   return (
-    <div>
+    <Grid    container
+    spacing={0}
+    direction="column"
+    alignItems="center"
+    justifyContent="center"
+    style={{ minHeight: '100vh' }}>
       <h1>
         Word Search
       </h1>
@@ -43,7 +48,6 @@ function App() {
           <SearchIcon style={{ fill: "blue" }} />
         </IconButton>
       </div>
-      
       <p>
         You have entered {searchWord}
       </p>
@@ -52,12 +56,12 @@ function App() {
       <p>No words found</p> :
       wordInfos.map((wordInfo) => 
       <div>
-        <Card sx={{ maxWidth: 345, mb: 2 }}>
+        <Card sx={{ width: 350, mb: 2 }}>
         <CardActionArea>
           <CardMedia
             component="img"
             height="140"
-            image={"https://picsum.photos/seed/" + wordInfo.meanings[0].definitions[0].definition + "/345/345"}
+            image={"https://picsum.photos/seed/" + wordInfo.meanings[0].definitions[0].definition + "/350/350"}
             alt="green iguana"
           />
           <CardContent>
@@ -73,7 +77,7 @@ function App() {
       </div>)
     }
 
-    </div>
+    </Grid>
   );
 
   function search(){
