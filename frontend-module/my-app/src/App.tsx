@@ -4,6 +4,7 @@ import './App.css';
 
 function App() {
   const [searchWord, setSearchWord] = useState("");
+  const [wordInfos, setWordInfos] = useState<undefined | any[]>(undefined);
   const WORD_BASE_URL = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 
   return (
@@ -19,17 +20,26 @@ function App() {
         Search
         </button>
       </div>
-
+      
       <p>
         You have entered {searchWord}
       </p>
+
+      {wordInfos === undefined ? 
+      <p>No words found</p> :
+      wordInfos.map((wordInfo) => 
+      <div>
+        <h4>{wordInfo.word} | {wordInfo.meanings[0].partOfSpeech}</h4>
+        <p>{wordInfo.meanings[0].definitions[0].definition}</p>
+      </div>)
+    }
 
     </div>
   );
 
   function search(){
     axios.get(WORD_BASE_URL + searchWord).then((res) => {
-      console.log(res.data);
+      setWordInfos(res.data);
     });
 }
 }
