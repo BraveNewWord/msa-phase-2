@@ -38,9 +38,13 @@ function App() {
   );
 
   function search(){
-    axios.get(WORD_BASE_URL + searchWord).then((res) => {
+    axios.get(WORD_BASE_URL + searchWord)
+    .then((res) => {
       setWordInfos(res.data);
+    }).catch(() => {
+      setWordInfos(undefined);
     });
+    ;
 }
 }
 
