@@ -56,7 +56,7 @@ function App() {
       <p>No words found</p> :
       wordInfos.map((wordInfo) => 
       <div>
-        <Card sx={{ width: 350, mb: 2 }}>
+        <Card sx={{ width: 350, mb: 2, backgroundColor: detColour(wordInfo.meanings[0].partOfSpeech)}}>
         <CardActionArea>
           <CardMedia
             component="img"
@@ -88,7 +88,22 @@ function App() {
       setWordInfos(undefined);
     });
     ;
-}
+  }
+
+  function detColour(partOfSpeech: string): string {
+    let colour = "#ffef62"
+    switch(partOfSpeech) {
+      case "noun":
+        colour = "#03a9f4";
+        break;
+      case "verb":
+        colour = "#ff6333";
+        break;
+      case "adjective":
+        colour = "#6fbf73";
+    }
+    return colour;
+  }
 }
 
 export default App;
