@@ -97,7 +97,7 @@ function App() {
         colour = "#03a9f4";
         break;
       case "verb":
-        colour = "#ff6333";
+        colour = "#ffa733";
         break;
       case "adjective":
         colour = "#6fbf73";
