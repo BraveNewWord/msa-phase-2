@@ -55,14 +55,14 @@ function App() {
       {wordInfos === undefined ? 
       <p>No words found</p> :
       wordInfos.map((wordInfo) => 
-      <div>
+      <div key={wordInfo.meanings[0].definitions[0].definition.replace(/\W/g, '')}>
         <Card sx={{ width: 350, mb: 2, backgroundColor: detColour(wordInfo.meanings[0].partOfSpeech)}}>
         <CardActionArea>
           <CardMedia
             component="img"
             height="140"
-            image={"https://picsum.photos/seed/" + wordInfo.meanings[0].definitions[0].definition + "/350/350"}
-            alt="green iguana"
+            image={"https://picsum.photos/seed/" + wordInfo.meanings[0].definitions[0].definition.replace(/\W/g, '') + "/350/350"}
+            alt="an image"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
