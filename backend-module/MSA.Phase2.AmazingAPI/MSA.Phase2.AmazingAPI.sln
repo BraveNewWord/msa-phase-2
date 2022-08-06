@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSA.Phase2.AmazingAPI", "MSA.Phase2.AmazingAPI\MSA.Phase2.AmazingAPI.csproj", "{46A85878-A552-46CB-BC10-73DC6F79570E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46A85878-A552-46CB-BC10-73DC6F79570E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46A85878-A552-46CB-BC10-73DC6F79570E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46A85878-A552-46CB-BC10-73DC6F79570E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46A85878-A552-46CB-BC10-73DC6F79570E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1592F62D-FA30-49A7-96E0-271F18C17CE7}
+	EndGlobalSection
+EndGlobal
