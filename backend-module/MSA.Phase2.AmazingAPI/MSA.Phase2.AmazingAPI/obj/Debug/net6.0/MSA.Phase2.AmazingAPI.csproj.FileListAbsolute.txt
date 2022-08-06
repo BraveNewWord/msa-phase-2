@@ -36,3 +36,5 @@ C:\Users\BJ\Documents\School\2022\msa\Phase2\msa-phase-2\backend-module\MSA.Phas
 C:\Users\BJ\Documents\School\2022\msa\Phase2\msa-phase-2\backend-module\MSA.Phase2.AmazingAPI\MSA.Phase2.AmazingAPI\bin\Debug\net6.0\NSwag.Generation.dll
 C:\Users\BJ\Documents\School\2022\msa\Phase2\msa-phase-2\backend-module\MSA.Phase2.AmazingAPI\MSA.Phase2.AmazingAPI\bin\Debug\net6.0\NSwag.Generation.AspNetCore.dll
 C:\Users\BJ\Documents\School\2022\msa\Phase2\msa-phase-2\backend-module\MSA.Phase2.AmazingAPI\MSA.Phase2.AmazingAPI\bin\Debug\net6.0\YamlDotNet.dll
+C:\Users\BJ\Documents\School\2022\msa\Phase2\msa-phase-2\backend-module\MSA.Phase2.AmazingAPI\MSA.Phase2.AmazingAPI\bin\Debug\net6.0\MSA.Phase2.AmazingAPI.xml
+C:\Users\BJ\Documents\School\2022\msa\Phase2\msa-phase-2\backend-module\MSA.Phase2.AmazingAPI\MSA.Phase2.AmazingAPI\obj\Debug\net6.0\MSA.Phase2.AmazingAPI.xml
