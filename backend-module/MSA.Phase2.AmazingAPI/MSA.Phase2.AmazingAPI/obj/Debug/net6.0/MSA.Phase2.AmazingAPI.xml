@@ -36,6 +36,15 @@
             </summary>
             <returns>A 204 No Content Response</returns>
         </member>
+        <member name="M:MSA.Phase2.AmazingAPI.Controllers.RedditController.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary />
+        </member>
+        <member name="M:MSA.Phase2.AmazingAPI.Controllers.RedditController.GetRawRedditHotPosts">
+            <summary>
+            Gets the raw JSON for the hot feed in reddit
+            </summary>
+            <returns>A JSON object representing the hot feed in reddit</returns>
+        </member>
         <member name="T:MSA.Phase2.AmazingAPI.Controllers.WeatherForecastController">
             <summary>
             This is the weather forecast controller that comes as a default from the project template when creating
