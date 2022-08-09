@@ -2,4 +2,4 @@
 
 Frontend Module is in `frontend-module` folder
 
-Backend Module is in `backend-module` folder
+Data science Module is in `data-science-module` folder
